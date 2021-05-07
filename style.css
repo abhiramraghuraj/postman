@@ -244,12 +244,12 @@ video{
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: .25rem;*/
+
 .input-container input{
-    align-items: center;
-    justify-content: center;
-    width: 110%;
+ 
+    width: 100%;
     padding: 12px 39px;
-    margin-left: 4px;
+    
     margin-bottom: 5px;
     border-style:ridge;
     border-width: 0.5px;
