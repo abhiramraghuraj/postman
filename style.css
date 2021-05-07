@@ -152,7 +152,7 @@ body,html{
 .topbox hr{
     align-self: center;
     justify-self: center;
-    width: 112%;
+    width: 100%;
     margin-left: 4px;
 }
 video{
@@ -188,7 +188,7 @@ video{
     margin: 0px 10px 0 0px;
     right: 2px;
     padding: 12px 0px;
-    width: 115%;
+    width: 100%;
     color: rgb(255, 255, 255) !important;
     box-sizing: border-box;
     text-decoration: none;
@@ -216,7 +216,7 @@ video{
     margin: 0px 10px 0 0px;
     right: 2px;
     padding: 12px 0px;
-    width: 115%;
+    width: 100%;
     color: rgb(255, 255, 255) !important;
     box-sizing: border-box;
     text-decoration: none;
@@ -471,7 +471,7 @@ video{
 .topbox h3{
     padding: 0px 10px;
     font-size: 25px;
-}*/
+}
 .topbox form p{
     text-align: center;
 
@@ -607,7 +607,7 @@ header{
 }
 body{
         background-color: rgb(28, 39, 43);
-    overflow: scroll;
+    overflow:scroll;
     overflow-x: hidden;
 }
 .menu
@@ -674,10 +674,19 @@ body{
     
 }
 .topbox{
+    display: grid;
     text-align: center;
     top: auto;
-    display: none;
+
+    font-size: auto;
     position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    width:auto;
+    right:18%;
+    left: 18%;
+
 }
 .topitems{
     opacity:0;
@@ -692,5 +701,51 @@ body{
     object-fit:cover;
     opacity: 1;
 }*/
+}
+@media(max-width:550px){
+    .text h2{
+        left: 0;
+        display: grid;
+        width: 100%;
+        padding-left: 0;
+        margin-left: 0;
+        font-size: 40px;
+        line-height: 0.35em;
+        vertical-align: middle;
+        justify-content: center;
+        text-align: center;
+    }
+    .text p{
+        display: grid;
+        text-align: center;
+        justify-content: center;
+        max-width: 1300px;
+        padding-left: 0;
+        
+    }
+    .topbox{
+        display: grid;
+        
+        top: auto;
+        left:18%;
+        font-size: auto;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 700px;
+        width:auto;
+        right:18%;
+    
+    }
+    .topbox h3{
+    
+        font-size: auto;
+    }
+    
+    
+    video{
+        overflow: hidden;
+    }
+    
 }
 
